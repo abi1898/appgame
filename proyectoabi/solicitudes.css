@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    display:flex;
+    background:url("segidores.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.menu{
+    width:180px;
+    min-height:100vh;
+    background:#0d8bff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:20px;
+}
+
+.boton{
+    width:120px;
+    height:120px;
+    background:linear-gradient(#ffe39a,#d79a2c);
+    margin:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+}
+
+.boton img{
+    width:70px;
+}
+.contenido{
+    flex:1;
+    padding:40px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+}
+.usuario{
+    width:300px;
+    background:linear-gradient(#22b8ff,#004dcf);
+    border-radius:12px;
+    box-shadow:0 0 15px black;
+    padding:20px;
+    text-align:center;
+    color:white;
+}
+
+.usuario button{
+    margin-top:10px;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#ffe39a;
+    font-weight:bold;
+}
+.modoDaltonico{
+margin-bottom:30px;
+color:white;
+font-family:'Silkscreen', sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+}
+.switch{
+
+position:relative;
+width:55px;
+height:28px;
+}
+.switch input{
+display:none;
+}
+.slider{
+position:absolute;
+cursor:pointer;
+background:#555;
+border-radius:20px;
+width:55px;
+height:28px;
+transition:.4s;
+}
+.slider:before{
+content:"";
+position:absolute;
+width:22px;
+height:22px;
+left:3px;
+bottom:3px;
+background:white;
+border-radius:50%;
+transition:.4s;
+}
+input:checked + .slider{
+background:#ffcc00;
+}
+
+input:checked + .slider:before{
+transform:translateX(27px);
+}
+body.daltonico .texto-degradado,
+body.daltonico p{
+color:#ffff00;
+
+}
+
+body.daltonico button{
+background:linear-gradient(#0055ff,#00ffff);
+color:black;
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>APP GAME</title>
+
+<link rel="stylesheet" href="publicaciones.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="menu">
+
+<div class="icono">
+<a href="menu.html">
+<img src="perfil.png">
+</a>
+</div>
+
+<div class="icono">
+<a href="logros.html">
+<img src="logrosimg.png">
+</a>
+</div>
+
+<div class="icono">
+<a href="publicaciones.html">
+<img src="publicacion.png">
+</a>
+</div>
+
+<div class="icono">
+<a href="amigos.html">
+<img src="amigos.png">
+</a>
+</div>
+
+</div>
+
+<div class="contenido">
+<div class="crearPublicacion">
+<div class="cabecera">
+<img id="fotoPerfil" src="perfil.png">
+<div>
+<h2 id="nombreUsuario">
+Usuario
+</h2>
+<p>
+Comparte con tus amigos
+</p>
+</div>
+</div>
+<textarea
+id="texto"
+placeholder="¿Qué estás pensando?">
+</textarea>
+<label class="checkLogro">
+<input type="checkbox" id="esLogro">
+🏆Publicar como logro
+
+</label>
+<div class="botones">
+
+<label class="subir">
+
+<input
+type="file"
+id="imagen"
+accept="image/*"
+hidden>
+<i class="fa-solid fa-image"></i>
+
+
+</label>
+
+<button
+onclick="publicar()">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<div id="muro">
+
+</div>
+
+</div>
+
+<script src="publicaciones.js"></script>
+<script>
+if(localStorage.getItem("daltonico") === "true"){
+    document.body.classList.add("modo-daltonico");
+}
+</script>
+
+</body>
+
+</html>
