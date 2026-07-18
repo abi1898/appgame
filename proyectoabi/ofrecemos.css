@@ -1,0 +1,63 @@
+*{
+    Margin:0;
+    Padding:0;
+    Box-sizing:border-box;
+    Font-family:Arial, Helvetica, sans-serif;
+}
+Body{
+   Background:#000;
+    Overflow:hidden;
+}
+.fondo{
+    Width:100%;
+    Height:100vh;
+    Background:url(ofrecemos.jpg);
+    Background-size:cover;
+    Background-position:center;
+    Position:relative;
+}
+.capa{
+    Position:absolute;
+    Width:100%;
+    Height:100%;
+    Background:rgba(0,0,0,.45);
+}
+.contenido{
+    Position:absolute;
+    Top:50%;
+    Left:50%;
+    Transform:translate(-50%,-50%);
+    Text-align:center;
+    Width:80%;
+}
+H1{
+    Color:#ffffff;
+    Font-size:70px;
+  Letter-spacing:4px;
+    Margin-bottom:25px;
+  Text-shadow:0 0 20px #00ff88;
+
+}
+P{
+    Color:white;
+    Font-size:22px;
+    Line-height:35px;
+    Margin-bottom:45px;
+}
+Button{
+    Background:#00d26a;
+    Color:white;
+    Border:none;
+    Padding:18px 70px;
+    Font-size:22px;
+    Border-radius:40px;
+    Cursor:pointer;
+    Transition:.4s;
+}
+Button:hover{
+    Transform:scale(1.08);
+    Box-shadow:0 0 20px #00ff88;
+}
+
+
+
