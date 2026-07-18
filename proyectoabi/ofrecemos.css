@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+*{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+}
+
+body{
+       width:100%;
+    height:100vh;
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.fondo{
+    width:100%;
+    height:100vh;
+    background:url(ofrecemos.jpg);
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+.capa{
+    position:absolute;
+    width: 200%;
+    height:500%;
+    background:radial-gradient(
+        circle at center,
+        rgba(22, 16, 12, 0.15),
+        rgba(44, 44, 44, 0.85)
+    );
+        text-align:center;
+    backdrop-filter: blur(2px);
+}
+
+.contenido{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    width:80%;
+}
+h1{
+     font-family:'Silkscreen', sans-serif;
+    color:#35be3b;
+    font-size:80px;
+    letter-spacing:8px;
+    margin-bottom:40px;
+    text-shadow:
+        3px 3px 0 #242220,
+        6px 6px 10px rgba(53, 100, 5, 0.795);
+}
+
+p{
+    color:#35be3b;
+    font-size:20px;
+    line-height:34px;
+    margin-bottom:45px;
+    text-shadow:6px 6px 10px rgba(0, 0, 0, 0.795);
+
+    font-family:'Silkscreen', sans-serif;
+    color:#1ef73b;
+    font-size:35px;
+    line-height:40px;
+    letter-spacing:1px;
+    text-shadow:
+        2px 2px 0 #292929,
+        6px 6px 10px rgba(57, 214, 83, 0.795);
+    margin-bottom:60px;
+}
+
+button{
+    width:340px;
+    height:75px;
+    border:none;
+    cursor:pointer;
+    font-family:'Silkscreen', sans-serif;
+    font-size:22px;
+    letter-spacing:3px;
+    color:#000000;
+    border-radius:10px;
+    background:linear-gradient(
+        to bottom,
+        #127a04 0%,
+        #35be3b 55%,
+        #069c06 100%
+    );
+}
+button:hover{
+    transform:scale(1.1);
+    box-shadow:
+        0 0 25px #067e38,
+        0 0 45px #35be3b;
+        
+}
+button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    background:rgba(5, 85, 11, 0.89);
+    transform:skewX(-25deg);
+}

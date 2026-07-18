@@ -1,0 +1,13 @@
+
+body.daltonismo {
+    filter: saturate(0.7) contrast(1.2);
+}
+/* Opciones de colores para ayudar a distinguir */
+body.daltonismo button {
+    background:#333;
+    color:white;
+}
+body.daltonismo input {
+    background:#fff;
+    color:#000;
+}
